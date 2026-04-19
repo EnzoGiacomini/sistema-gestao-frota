@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "DVO - Sistema de Oficina",
+  title: "DVO - Prefeitura de Pelotas",
   description: "Gestão profissional de veículos e ordens de serviço",
 };
 
