@@ -18,7 +18,7 @@ export default function LoginPage() {
     <div className="min-h-screen grid grid-cols-1 min-[950px]:grid-cols-2 bg-white text-black">
       <div className="flex flex-col justify-center items-center gap-12">
         <div className="flex flex-col items-center justify-center gap-10">
-          <img src="/logoPrefPel.jpeg" alt="icon" className="w-130 h-50" />
+          <img src="/logoPrefPelWhite.jpeg" alt="icon" className="w-130 h-50" />
           <p className="font-bold text-black-400 text-[22px]">
             Entre com a sua conta
           </p>
