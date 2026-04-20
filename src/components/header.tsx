@@ -13,7 +13,7 @@ export function Header() {
             <div className="w-full h-18 flex flex-row items-center justify-between xl:justify-around px-4 xl:px-0">
                 
                 <a href='https://www.pelotas.com.br/' target="_blank" rel="noopener noreferrer">
-                    <img src="/logoPrefPelBlack.png" className="w-40 xl:w-50 h-auto cursor-pointer" alt="Logo Prefeitura" />
+                    <img src="/logoPrefPelBlack.png" className="w-40 xl:w-50 h-18 cursor-pointer" alt="Logo Prefeitura" />
                 </a>
 
                 <div className='hidden xl:block border-l border-white h-10'></div>
