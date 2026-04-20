@@ -1,4 +1,5 @@
 import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -7,6 +8,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       <main className="flex-1">
         {children}
       </main>
+        <Footer />
     </div>
   );
 }
