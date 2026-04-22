@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  /* Fundo forçado para branco e texto para escuro */
   --background: #ffffff;
   --foreground: #171717;
 }
