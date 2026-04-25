@@ -1,9 +1,12 @@
 "use client" ;
-import { Search, ChevronDown } from "lucide-react";
+import { Search, ChevronDown, Filter, X } from "lucide-react";
 import { useState } from "react";
 
 
 export function WorkOrderFilter(){
+
+    // Estados para o mobile
+    const [isMobileOpen, setIsMobileOpen] = useState(false);
 
     // Estados para o Status
     const [statusOpen, setStatusOpen] = useState(false);
@@ -15,14 +18,46 @@ export function WorkOrderFilter(){
     const [periodoSelected, setPeriodoSelected] = useState("Hoje");
     const periodoOptions = ["Hoje", "Últimos 7 dias", "Últimos 30 dias", "Personalizado"];
 
-   return(
+   return (
+    <>
+      {/* 1. BOTÃO FLUTUANTE (Aparece só no Mobile) */}
+      <button
+        onClick={() => setIsMobileOpen(true)}
+        className="md:hidden fixed bottom-6 right-6 z-50 bg-orange-500 text-white p-4 rounded-full shadow-lg active:scale-95 transition-all"
+      >
+        <Filter size={24} />
+      </button>
 
+      {/* 2. OVERLAY (Escurece o fundo quando o filtro abre no Mobile) */}
+      {isMobileOpen && (
+        <div 
+          className="fixed inset-0 bg-black/40 z-[60] md:hidden" 
+          onClick={() => setIsMobileOpen(false)}
+        />
+      )}
     
-    <div className="w-[400px] h-[600px] p-6 bg-white rounded-2xl shadow-sm border border-zinc-100 flex flex-col gap-6 text-zinc-900">
+    
+    <div className={`
+        /* No Mobile: vira uma gaveta lateral fixa e escondida */
+        fixed inset-y-0 right-0 z-[70] w-[300px] bg-white shadow-2xl transition-transform duration-300
+        ${isMobileOpen ? "translate-x-0" : "translate-x-full"}
+
+        /* No Desktop: volta a ser um card relativo e visível */
+        md:relative md:translate-x-0 md:w-[400px] md:h-[600px] md:rounded-2xl md:shadow-sm md:border md:border-zinc-100
+        
+        p-6 flex flex-col gap-6 text-zinc-900
+     `}>
         
         {/* Título */}
         <div className="pt-5 text-lg font-bold">
+            
             <h2>Filtros</h2>
+            
+            {/* Botão X: só aparece no mobile para fechar a gaveta */}
+            <button onClick={() => setIsMobileOpen(false)} className="md:hidden p-2 text-zinc-400">
+                <X size={20} />
+            </button>
+
         </div>
 
         {/* Seleção de filtros */}
@@ -125,7 +160,7 @@ export function WorkOrderFilter(){
         </div>
     
         {/* Ação do filtro */}
-        <div>
+        <div className="mt-auto mb-10">
             <div className="flex flex-col gap-3 mt-6">
                 {/* Botão Limpar Filtros */}
                 <button 
@@ -146,5 +181,6 @@ export function WorkOrderFilter(){
 
 
     </div>
+    </>
    )
 }
