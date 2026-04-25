@@ -23,7 +23,7 @@ export function WorkOrderFilter(){
       {/* 1. BOTÃO FLUTUANTE (Aparece só no Mobile) */}
       <button
         onClick={() => setIsMobileOpen(true)}
-        className="md:hidden fixed bottom-6 right-6 z-50 bg-orange-500 text-white p-4 rounded-full shadow-lg active:scale-95 transition-all"
+        className="md:hidden fixed top-20 left-6 z-50 bg-orange-500 text-white p-4 rounded-full shadow-lg active:scale-95 transition-all"
       >
         <Filter size={24} />
       </button>
@@ -39,8 +39,8 @@ export function WorkOrderFilter(){
     
     <div className={`
         /* No Mobile: vira uma gaveta lateral fixa e escondida */
-        fixed inset-y-0 right-0 z-[70] w-[300px] bg-white shadow-2xl transition-transform duration-300
-        ${isMobileOpen ? "translate-x-0" : "translate-x-full"}
+        fixed inset-y-0 left-0 z-[70] w-[300px] bg-white shadow-2xl transition-transform duration-300
+        ${isMobileOpen ? "translate-x-0" : "-translate-x-full"}
 
         /* No Desktop: volta a ser um card relativo e visível */
         md:relative md:translate-x-0 md:w-[400px] md:h-[600px] md:rounded-2xl md:shadow-sm md:border md:border-zinc-100
