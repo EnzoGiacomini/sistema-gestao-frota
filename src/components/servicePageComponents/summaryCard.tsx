@@ -16,7 +16,7 @@ export function SummaryCard({
   iconBg,
 }: SummaryCardProps) {
   return (
-    <div className="p-6 lg:pr-30 flex items-start gap-4 w-full rounded-2xl border border-gray-200 shadow-sm flex-row">
+    <div className="p-6 lg:pr-30 flex items-start gap-4 w-full rounded-2xl border border-gray-200 shadow-sm flex-row text-nowrap">
       <div className={`${iconBg} p-2 rounded-2xl`}>{icon}</div>
       <div className="flex flex-col">
         <span className="font-extrabold text-[24px]">{total}</span>
