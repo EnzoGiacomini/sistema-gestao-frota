@@ -4,7 +4,9 @@ export default function ServicePage() {
   return (
     <section className="w-full flex justify-center">
       <div className="justify-center items-center pt-10">
-        <WorkOrderFilter />
+
+      {/* teste aqui */}
+
       </div>
     </section>
   );
