@@ -3,6 +3,7 @@ import { WorkOrderFilter } from "@/components/servicePageComponents/workOrderFil
 import { PageHeader } from "@/components/pageHeader";
 import { ServiceTable } from "@/components/servicePageComponents/tableComponents/serviceTable";
 import { FileText, Clock, RefreshCcw, BadgeCheck } from "lucide-react";
+import { Pagination } from "@/components/servicePageComponents/tableComponents/tableNavigation";
 
 const mockServices = [
   { 
@@ -108,6 +109,7 @@ export default function ServicePage() {
           <ServiceTable 
             services={mockServices}
           />
+          <Pagination />
         </div>
         
       </div>
