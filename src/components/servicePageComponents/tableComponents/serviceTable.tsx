@@ -8,7 +8,7 @@ interface ServiceTableProps{
 export function ServiceTable({services}:ServiceTableProps)
 {
     return (
-        <div className="w-full max-w-full overflow-x-auto bg-white rounded-2xl border border-gray-200 shadow-sm">
+        <div className="w-full max-w-full overflow-x-auto bg-white rounded-t-2xl rounded-b-0 border border-gray-200 shadow-sm">
             <table className="w-full min-w-250 border-collapse text-left">
                 <TableHeader/>
                 <tbody>

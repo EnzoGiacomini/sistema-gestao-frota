@@ -17,24 +17,24 @@ export function Pagination() {
 
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between p-4 bg-white border border-zinc-200 rounded-b-2xl gap-4 w-6/10">
+    <div className="flex flex-col md:flex-row items-center justify-between p-4 bg-white border border-zinc-200 rounded-b-2xl gap-4 w-full">
       
       {/* Esquerda: Texto informativo estático */}
-      <span className="text-sm text-zinc-500 font-medium">
+      <span className="text-sm text-zinc-500 font-medium shrink-0">
         Mostrando 1 a 6 de 24 ordens de serviço
       </span>
 
       {/* Direita: Botões de navegação */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 overflow-x-auto max-w-full pb-2 md:pb-0">
         
         {/* Botão Anterior */}
         <button 
           disabled={currentPage === 1}
           onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
-          className="flex items-center gap-1 px-4 py-2 border border-zinc-200 rounded-xl text-orange-500 hover:bg-zinc-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all text-sm font-bold"
-        >
+          className="flex cursor-pointer items-center gap-1 px-4 py-2 border border-zinc-200 rounded-xl text-orange-500 hover:bg-zinc-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all text-sm font-bold"
+        > 
           Anterior
-          <ChevronRight size={16} />
+          <ChevronLeft size={16} />
         </button>
 
         {/* Lógica para renderizar os números das páginas */}
@@ -42,7 +42,7 @@ export function Pagination() {
           <button
             key={page}
             onClick={() => setCurrentPage(page)}
-            className={`${baseStyle} ${currentPage === page ? activeStyle : inactiveStyle}`}
+            className={`${baseStyle} ${currentPage === page ? activeStyle : inactiveStyle} cursor-pointer`}
           >
             {page}
           </button>
@@ -52,7 +52,7 @@ export function Pagination() {
         <button 
           disabled={currentPage === totalPages}
           onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
-          className="flex items-center gap-1 px-4 py-2 border border-zinc-200 rounded-xl text-orange-500 hover:bg-zinc-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all text-sm font-bold"
+          className="flex cursor-pointer items-center gap-1 px-4 py-2 border border-zinc-200 rounded-xl text-orange-500 hover:bg-zinc-100 disabled:opacity-50 disabled:cursor-not-allowed transition-all text-sm font-bold"
         >
           Próximo
           <ChevronRight size={16} />
