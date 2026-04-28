@@ -1,7 +1,7 @@
 "use client" ;
 import { Search, ChevronDown, Filter, X } from "lucide-react";
 import { useState } from "react";
-import { FilterDropdown } from "../components/filterSubcomponents/dropdownComponent"
+import { FilterDropdown } from "./filterSubcomponents/dropdownComponent"
 
 export function WorkOrderFilter(){
 

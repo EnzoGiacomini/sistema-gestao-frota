@@ -13,7 +13,7 @@ interface PageHeaderProps{
 export function PageHeader({title, description, hideButton, buttonText}: PageHeaderProps)
 {
     return (
-        <section className="flex flex-col min-[800px]:flex-row items-center gap-8 min-[800px]:gap-0 justify-between min-[500px]:max-w-[80%] w-full">
+        <section className="flex flex-col min-[800px]:flex-row items-center gap-8 min-[800px]:gap-0 justify-between w-[95%]">
             <div className="flex flex-col gap-3 text-center min-[800px]:text-start">
                 <h2 className="text-[42px] text-orange-500 font-bold">{title}</h2>
                 <p className="text-[18px] text-gray-500">{description}</p>
