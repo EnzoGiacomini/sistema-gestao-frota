@@ -23,7 +23,7 @@ export function VehicleResume({img, plate, model, year, hasStep, hasJack, hasWhe
         <section className="flex flex-col gap-5 p-6 border border-gray-200 rounded-2xl">
             <h3 className="font-bold text-[20px]">Resumo do Veículo</h3>
             <div className="flex flex-col gap-3">
-                <img className="w-100 h-50 border border-gray-200 rounded-2xl" src={img}/>
+                <img className="w-100 h-50 border border-gray-200 rounded-2xl" alt="Imagem do veículo encontrado" src={img}/>
                 <div className="flex flex-row justify-between">
                     <label>Placa</label>
                     <span className="font-bold">{plate}</span>
