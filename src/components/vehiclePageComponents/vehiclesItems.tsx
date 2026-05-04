@@ -40,8 +40,8 @@ export function  VehicleItems ({ item, Icone }:VehicleItemsProps) {
                 />
 
                 <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center 
-                    ${selected === 'sim' ? 'border-green-500' : 'border-gray-300'}`}>
-                    {selected === 'sim' && <div className="w-2.5 h-2.5 bg-green-500 rounded-full" />}
+                    ${selected === 'sim' ? 'border-orange-500' : 'border-gray-300'}`}>
+                    {selected === 'sim' && <div className="w-2.5 h-2.5 bg-orange-500 rounded-full" />}
                 </div>
 
                 <span className="text-sm text-gray-500">Sim</span>
@@ -57,8 +57,8 @@ export function  VehicleItems ({ item, Icone }:VehicleItemsProps) {
                     onChange={() => setSelected('nao')}
                 />
                 <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center 
-                    ${selected === 'nao' ? 'border-green-500' : 'border-gray-300'}`}>
-                    {selected === 'nao' && <div className="w-2.5 h-2.5 bg-green-500 rounded-full" />}
+                    ${selected === 'nao' ? 'border-orange-500' : 'border-gray-300'}`}>
+                    {selected === 'nao' && <div className="w-2.5 h-2.5 bg-orange-500 rounded-full" />}
                 </div>
 
                 <span className="text-sm text-gray-500">Não</span>
