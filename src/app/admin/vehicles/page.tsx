@@ -19,7 +19,7 @@ export default function VehiclesPage() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full max-w-7xl">
-        <div className="lg:col-span-2 border rounded-2xl p-6 border-gray-200">
+        <div className="lg:col-span-2 border rounded-2xl p-6 border-gray-200 shadow-sm">
           <form className="flex flex-col gap-6">
             <div className="flex flex-col gap-4">
               <label className="font-bold text-gray-800">
