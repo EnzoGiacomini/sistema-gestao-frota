@@ -26,10 +26,11 @@ export default function VehiclesPage() {
                 Dados do Veículo
               </label>
               <PlateField API />
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 <CarDetails item="Marca" result="" />
                 <CarDetails item="Modelo" result="" />
                 <CarDetails item="Ano" result="" />
+                <CarDetails item="Secretaria" result="" />
               </div>
             </div>
 
@@ -50,7 +51,7 @@ export default function VehiclesPage() {
             <div className="flex flex-row justify-between items-center mt-2 gap-5">
               <button
                 type="button"
-                className="px-2 py-1 min-[340px]:py-2 min-[340px]:px-4 border border-gray-300 rounded-lg text-gray-700 bg-white hover:bg-gray-50 font-medium transition-colors cursor-pointer"
+                className="px-2 py-1 min-[340px]:py-2 min-[340px]:px-4 border border-gray-300 rounded-lg text-gray-700 bg-white transition-all duration-300 ease-in-out hover:bg-orange-50 hover:shadow-mdactive:scale-95 hover:border-orange-500"
               >
                 ✕ Cancelar
               </button>
@@ -70,6 +71,7 @@ export default function VehiclesPage() {
             plate="ABC-1234"
             model="Fiat Strada"
             year={2021}
+            secretary="Educação"
             hasStep={true}
             hasJack={true}
             hasWheelWrench={true}
