@@ -50,7 +50,7 @@ export default function VehiclesPage() {
             <div className="flex flex-row justify-between items-center mt-2 gap-5">
               <button
                 type="button"
-                className="px-2 py-1 min-[340px]:py-2 min-[340px]:px-4 border border-gray-300 rounded-lg text-gray-700 bg-white hover:bg-gray-50 font-medium transition-colors cursor-pointer"
+                className="px-2 py-1 min-[340px]:py-2 min-[340px]:px-4 border border-gray-300 rounded-lg text-gray-700 bg-white transition-all duration-300 ease-in-out hover:bg-orange-50 hover:shadow-mdactive:scale-95 hover:border-orange-500"
               >
                 ✕ Cancelar
               </button>
