@@ -26,11 +26,11 @@ export default function VehiclesPage() {
                 Dados do Veículo
               </label>
               <PlateField API />
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 <CarDetails item="Marca" result="" />
                 <CarDetails item="Modelo" result="" />
                 <CarDetails item="Ano" result="" />
-                 <CarDetails item="Secretaria" result="" />
+                <CarDetails item="Secretaria" result="" />
               </div>
             </div>
 
