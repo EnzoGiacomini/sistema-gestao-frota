@@ -26,10 +26,11 @@ export default function VehiclesPage() {
                 Dados do Veículo
               </label>
               <PlateField API />
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 <CarDetails item="Marca" result="" />
                 <CarDetails item="Modelo" result="" />
                 <CarDetails item="Ano" result="" />
+                <CarDetails item="Secretaria" result="" />
               </div>
             </div>
 
@@ -70,6 +71,7 @@ export default function VehiclesPage() {
             plate="ABC-1234"
             model="Fiat Strada"
             year={2021}
+            secretary="Educação"
             hasStep={true}
             hasJack={true}
             hasWheelWrench={true}
