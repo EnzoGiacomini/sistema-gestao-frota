@@ -30,6 +30,7 @@ export default function VehiclesPage() {
                 <CarDetails item="Marca" result="" />
                 <CarDetails item="Modelo" result="" />
                 <CarDetails item="Ano" result="" />
+                 <CarDetails item="Secretaria" result="" />
               </div>
             </div>
 
