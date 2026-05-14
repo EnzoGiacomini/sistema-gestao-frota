@@ -70,6 +70,7 @@ export default function VehiclesPage() {
             plate="ABC-1234"
             model="Fiat Strada"
             year={2021}
+            secretary="Educação"
             hasStep={true}
             hasJack={true}
             hasWheelWrench={true}
