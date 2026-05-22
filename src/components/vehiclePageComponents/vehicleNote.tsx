@@ -1,16 +1,16 @@
 export function NoteInput() {
   return (
     <div className="w-full flex flex-col gap-1">
-      <label className="text-[15px">Observações</label>
+      <label htmlFor="obs" className="text-[15px] text-gray-600">
+        Observações
+      </label>
       <textarea
-        className="border rounded p-1 w-full h-20"
         id="obs"
         name="obs"
-        rows={5}
-        cols={30}
         maxLength={500}
         placeholder="Deixe uma observação aqui..."
-      ></textarea>
+        className="w-full h-35 p-3 border border-gray-300 rounded-md resize-none placeholder:text-gray-400 focus:outline-none focus:border-gray-300 transition-colors"
+      />
     </div>
   );
 }
