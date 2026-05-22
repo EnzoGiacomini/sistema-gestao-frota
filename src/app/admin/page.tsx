@@ -1,4 +1,4 @@
-import { OptionCard } from "@/components/optionCard";
+import { OptionCard } from "@/components/globalComponents/optionCard";
 import { Users, FileText, Truck, BarChart } from "lucide-react";
 import Link from "next/link";
 

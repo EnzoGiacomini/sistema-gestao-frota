@@ -1,9 +1,9 @@
 import { SummaryCard } from "@/components/servicePageComponents/summaryCard";
 import { WorkOrderFilter } from "@/components/servicePageComponents/workOrderFilter"
-import { PageHeader } from "@/components/pageHeader";
-import { ServiceTable } from "@/components/servicePageComponents/tableComponents/serviceTable";
+import { PageHeader } from "@/components/globalComponents/pageHeader";
+import { ServiceTable } from "@/components/tableComponents/serviceTable";
 import { FileText, Clock, RefreshCcw, BadgeCheck } from "lucide-react";
-import { Pagination } from "@/components/servicePageComponents/tableComponents/tableNavigation";
+import { Pagination } from "@/components/tableComponents/tableNavigation";
 
 const mockServices = [
   { 
