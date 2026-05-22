@@ -4,7 +4,7 @@ import { VehicleItems } from "@/components/vehiclePageComponents/vehiclesItems";
 import { CarDetails } from "@/components/vehiclePageComponents/carDetails";
 import { PlateField } from "@/components/vehiclePageComponents/plateField";
 import { NoteInput } from "@/components/vehiclePageComponents/vehicleNote";
-import { PageHeader } from "@/components/pageHeader";
+import { PageHeader } from "@/components/globalComponents/pageHeader";
 
 export default function VehiclesPage() {
   return (
