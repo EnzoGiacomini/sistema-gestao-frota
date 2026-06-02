@@ -20,7 +20,7 @@ export function PlateField({ API }: PlateFieldProps) {
         />
         <button
           type="button"
-          className="bg-white text-orange-500 font-bold text-[13px] flex flex-row gap-2 items-center justify-center cursor-pointer px-3 py-1.5 border border-orange-500 rounded shrink-0 whitespace-nowrap transition-all duration-300 ease-in-out hover:bg-orange-50 hover:shadow-mdactive:scale-95"
+          className="bg-white text-orange-500 font-bold text-[13px] flex flex-row gap-2 items-center justify-center cursor-pointer px-3 py-1.5 border border-orange-500 rounded shrink-0 whitespace-nowrap transition-all duration-300 ease-in-out hover:bg-orange-50 hover:shadow-md active:scale-95"
         >
           <Search className="h-4 w-4 text-orange-500 shrink-0" />
           Consultar placa
