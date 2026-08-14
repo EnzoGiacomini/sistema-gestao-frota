@@ -1,6 +1,6 @@
 # Sistema de Gerenciamento de Frota
 
-Aplicação web para gestão da frota de veículos da Prefeitura Municipal de Pelotas, desenvolvida na **Hut8 — Empresa Júnior de Computação da UFPel** a partir de requisitos levantados com o cliente.
+Aplicação web para gestão e controle de manutenção de uma frota de veículos, desenvolvida em dupla a partir de uma necessidade real de organização de processos que antes eram feitos manualmente.
 
 Este repositório contém a primeira fase do projeto, focada na construção da interface e dos componentes reutilizáveis do sistema.
 
@@ -8,9 +8,9 @@ Este repositório contém a primeira fase do projeto, focada na construção da 
 
 ## Sobre o projeto
 
-O sistema centraliza o controle de manutenção da frota municipal, substituindo processos que antes eram feitos manualmente. As principais telas cobrem:
+O sistema centraliza o controle da frota e das manutenções realizadas. As principais telas cobrem:
 
-- **Veículos** — cadastro, consulta por placa e detalhamento por secretaria responsável
+- **Veículos** — cadastro, consulta por placa e detalhamento por setor responsável
 - **Ordens de serviço** — registro de itens do veículo, observações e resumo da manutenção
 - **Fornecedores** — cadastro e gestão dos prestadores de serviço
 - **Usuários** — controle de acesso ao sistema
@@ -54,7 +54,6 @@ O projeto foi desenvolvido em dupla, seguindo um fluxo de trabalho baseado em Gi
 - **Branches por feature** — cada funcionalidade em sua própria branch (`feat/vehiclesPage`, `feat/reportFilter`, `refactor/change-text-area-vehicle-items`)
 - **Pull requests com revisão** — toda alteração passava por PR e aprovação do outro desenvolvedor antes do merge na `main`
 - **Conventional Commits** — mensagens padronizadas com `feat:`, `fix:`, `style:` e `refactor:`
-- Acompanhamento das entregas em squad, com líder técnico e prazos definidos pelo cliente
 
 ---
 
@@ -62,5 +61,3 @@ O projeto foi desenvolvido em dupla, seguindo um fluxo de trabalho baseado em Gi
 
 - [Enzo Giacomini](https://github.com/EnzoGiacomini)
 - [Pedro Bortoli](https://github.com/PedroMBortoli)
-
-Desenvolvido na Hut8 — Empresa Júnior de Computação, Universidade Federal de Pelotas.
