@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sistema de Gerenciamento de Frota
 
-## Getting Started
+Aplicação web para gestão da frota de veículos da Prefeitura Municipal de Pelotas, desenvolvida na **Hut8 — Empresa Júnior de Computação da UFPel** a partir de requisitos levantados com o cliente.
 
-First, run the development server:
+Este repositório contém a primeira fase do projeto, focada na construção da interface e dos componentes reutilizáveis do sistema.
+
+---
+
+## Sobre o projeto
+
+O sistema centraliza o controle de manutenção da frota municipal, substituindo processos que antes eram feitos manualmente. As principais telas cobrem:
+
+- **Veículos** — cadastro, consulta por placa e detalhamento por secretaria responsável
+- **Ordens de serviço** — registro de itens do veículo, observações e resumo da manutenção
+- **Fornecedores** — cadastro e gestão dos prestadores de serviço
+- **Usuários** — controle de acesso ao sistema
+- **Relatórios** — geração de relatórios com filtros de pesquisa
+
+Toda a interface foi construída de forma responsiva e com componentes reutilizáveis.
+
+---
+
+## Stack
+
+| Camada | Tecnologia |
+|---|---|
+| Framework | Next.js (App Router) |
+| Linguagem | TypeScript |
+| Estilização | Tailwind CSS |
+| Ícones | lucide-react |
+| Qualidade | ESLint |
+| Integração | Consumo de API REST |
+
+---
+
+## Como executar
 
 ```bash
+# Instalar dependências
+npm install
+
+# Rodar em ambiente de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação ficará disponível em `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Organização do trabalho
 
-## Learn More
+O projeto foi desenvolvido em dupla, seguindo um fluxo de trabalho baseado em Git:
 
-To learn more about Next.js, take a look at the following resources:
+- **Branches por feature** — cada funcionalidade em sua própria branch (`feat/vehiclesPage`, `feat/reportFilter`, `refactor/change-text-area-vehicle-items`)
+- **Pull requests com revisão** — toda alteração passava por PR e aprovação do outro desenvolvedor antes do merge na `main`
+- **Conventional Commits** — mensagens padronizadas com `feat:`, `fix:`, `style:` e `refactor:`
+- Acompanhamento das entregas em squad, com líder técnico e prazos definidos pelo cliente
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Autores
 
-## Deploy on Vercel
+- [Enzo Giacomini](https://github.com/EnzoGiacomini)
+- [Pedro Bortoli](https://github.com/PedroMBortoli)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desenvolvido na Hut8 — Empresa Júnior de Computação, Universidade Federal de Pelotas.
