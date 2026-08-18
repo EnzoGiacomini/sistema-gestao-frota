@@ -4,6 +4,8 @@ Aplicação web para gestão e controle de manutenção de uma frota de veículo
 
 Este repositório contém a primeira fase do projeto, focada na construção da interface e dos componentes reutilizáveis do sistema.
 
+> **Dados de demonstração.** Toda a aplicação roda com dados fictícios (usuários, veículos, fornecedores e ordens de serviço são mocks). O repositório não contém dados, identidade visual ou informações de nenhum cliente.
+
 ---
 
 ## Sobre o projeto
@@ -33,6 +35,20 @@ Toda a interface foi construída de forma responsiva e com componentes reutiliz�
 
 ---
 
+## Telas
+
+| Rota | Descrição |
+|---|---|
+| `/` | Login |
+| `/admin` | Painel inicial com atalhos por módulo |
+| `/admin/services` | Ordens de serviço com filtros e paginação |
+| `/admin/vehicles` | Frota: consulta por placa, detalhamento e observações |
+| `/admin/report` | Relatórios com filtros combinados |
+| `/admin/users` | Usuários internos e fornecedores |
+| `/supplier` | Portal do fornecedor para orçamentos |
+
+---
+
 ## Como executar
 
 ```bash
@@ -54,6 +70,12 @@ O projeto foi desenvolvido em dupla, seguindo um fluxo de trabalho baseado em Gi
 - **Branches por feature** — cada funcionalidade em sua própria branch (`feat/vehiclesPage`, `feat/reportFilter`, `refactor/change-text-area-vehicle-items`)
 - **Pull requests com revisão** — toda alteração passava por PR e aprovação do outro desenvolvedor antes do merge na `main`
 - **Conventional Commits** — mensagens padronizadas com `feat:`, `fix:`, `style:` e `refactor:`
+
+---
+
+## Continuidade
+
+Esta é a fase inicial do sistema. O projeto foi posteriormente doado à **Hut8 — Empresa Júnior de Computação da UFPel**, onde evoluiu para uma versão com back-end próprio (API REST em Fastify + PostgreSQL), autenticação com JWT, controle de acesso por papel e board Kanban de ordens de serviço — em repositório privado da empresa júnior.
 
 ---
 

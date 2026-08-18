@@ -3,10 +3,10 @@ import { FilterInput } from "./filterInput";
 import { FilterSelect } from "./filterSelect";
 
 export function ReportFilter() {
-  const secretariaOptions = [
-    { value: "educacao", label: "Secretaria de Educação" },
-    { value: "saude", label: "Secretaria de Saúde" },
-    { value: "obras", label: "Secretaria de Obras" },
+  const setorOptions = [
+    { value: "administrativo", label: "Setor Administrativo" },
+    { value: "logistica", label: "Setor de Logística" },
+    { value: "operacoes", label: "Setor de Operações" },
   ];
 
   return (
@@ -21,7 +21,7 @@ export function ReportFilter() {
 
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
         <FilterInput label="Nº da Ordem de Serviço" placeholder="Ex: OS-000123" />
-        <FilterSelect label="Secretaria" options={secretariaOptions} />
+        <FilterSelect label="Setor" options={setorOptions} />
         <FilterInput label="Placa" placeholder="Ex: ABC-1234" />
         <FilterInput label="Veículo" placeholder="Ex: Gol, Onix, Hilux..." />
         <FilterInput label="Período de Conclusão" type="date" />

@@ -30,7 +30,7 @@ export default function VehiclesPage() {
                 <CarDetails item="Marca" result="" />
                 <CarDetails item="Modelo" result="" />
                 <CarDetails item="Ano" result="" />
-                <CarDetails item="Secretaria" result="" />
+                <CarDetails item="Setor" result="" />
               </div>
             </div>
 
@@ -71,7 +71,7 @@ export default function VehiclesPage() {
             plate="ABC-1234"
             model="Fiat Strada"
             year={2021}
-            secretary="Educação"
+            sector="Administrativo"
             hasStep={true}
             hasJack={true}
             hasWheelWrench={true}
