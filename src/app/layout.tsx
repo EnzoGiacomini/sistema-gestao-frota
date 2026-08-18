@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "DVO - Prefeitura de Pelotas",
+  title: "GFO - Gestão de Frota e Oficinas",
   description: "Gestão profissional de veículos e ordens de serviço",
 };
 

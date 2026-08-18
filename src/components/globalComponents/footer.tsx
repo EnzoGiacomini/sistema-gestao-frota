@@ -9,10 +9,10 @@ export function Footer()
         <footer className='bg-transparent w-full min-h-42 border-t-amber-600 border-t-2 flex flex-col'>
             <div className='min-h-34 flex flex-col min-[1060px]:flex-row items-center min-[1060px]:justify-center xl:gap-17 gap-4 px-4 py-4'>
                 <div className='flex flex-col min-[560px]:flex-row items-center justify-center gap-3 min-[1060px]:gap-5'>
-                    <img src="/logoPrefPelWhite2.png" className='w-70'/>
+                    <img src="/logo-dark.svg" className='w-70' alt='Logo GFO'/>
                     <div className='flex flex-col max-w-87.5 gap-2 text-center min-[560px]:text-start'>
-                        <span className='text-black text-[16px] font-bold'>DVO - Departamento de Veículos e Oficinas</span>
-                        <p className='text-[12px] text-gray-500 font-extralight'>Sistema desenvolvido para otimizar a gestão de frota, oficinas e serviços no município de Pelotas</p>
+                        <span className='text-black text-[16px] font-bold'>GFO - Gestão de Frota e Oficinas</span>
+                        <p className='text-[12px] text-gray-500 font-extralight'>Sistema desenvolvido para otimizar a gestão de frota, oficinas e ordens de serviço</p>
                     </div>
                 </div>
                 <div className='min-[1060px]:border-l-2 border-b-2 border-gray-400 min-[1060px]:h-22 w-50 min-[360px]:w-90 min-[560px]:w-130 min-[1060px]:w-0'></div>
@@ -31,7 +31,7 @@ export function Footer()
                 </div>
             </div>
             <div className='min-h-12 bg-mist-900 flex items-center justify-center text-[12px] text-wrap text-center'>
-                <span className='text-gray-300'>&copy; {year} Prefeitura Municipal de Pelotas. Todos os direitos reservados.</span>
+                <span className='text-gray-300'>&copy; {year} GFO - Gestão de Frota e Oficinas. Projeto de portfólio.</span>
             </div>
         </footer>
     );

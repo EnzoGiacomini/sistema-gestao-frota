@@ -12,9 +12,9 @@ export function Header() {
         <header className="w-full bg-black">
             <div className="w-full h-18 flex flex-row items-center justify-between xl:justify-around px-4 xl:px-0">
                 
-                <a href='https://www.pelotas.com.br/' target="_blank" rel="noopener noreferrer">
-                    <img src="/logoPrefPelBlack.png" className="w-40 xl:w-50 h-18 cursor-pointer" alt="Logo Prefeitura" />
-                </a>
+                <Link href='/admin'>
+                    <img src="/logo-light.svg" className="w-40 xl:w-50 h-18 cursor-pointer" alt="Logo GFO" />
+                </Link>
 
                 <div className='hidden xl:block border-l border-white h-10'></div>
 
@@ -45,7 +45,7 @@ export function Header() {
 
                 <div className='hidden xl:flex flex-row gap-6'>
                     <div className='flex flex-col whitespace-nowrap'>
-                        <span className='text-white text-sm'>Gustavo Fonseca da Cunha</span>
+                        <span className='text-white text-sm'>Ana Beatriz Ramos</span>
                         <span className='flex justify-end text-gray-400 text-xs'>ADMIN</span>
                     </div>
                     <div className='text-white flex flex-row gap-2 items-center justify-center cursor-pointer hover:text-red-500 transition-colors'>
@@ -83,7 +83,7 @@ export function Header() {
                     
                     <div className="border-t border-zinc-800 my-2 pt-4 flex items-center justify-between">
                         <div className='flex flex-col'>
-                            <span className='text-white text-sm'>Gustavo Fonseca da Cunha</span>
+                            <span className='text-white text-sm'>Ana Beatriz Ramos</span>
                             <span className='text-gray-400 text-xs'>ADMIN</span>
                         </div>
                         <div className='text-white flex items-center gap-2 cursor-pointer hover:text-red-500'>

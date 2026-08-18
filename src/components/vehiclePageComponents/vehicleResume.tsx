@@ -5,7 +5,7 @@ interface VehicleResumeProps {
   plate: string;
   model: string;
   year: number;
-  secretary: string;
+  sector: string;
   hasStep: boolean;
   hasJack: boolean;
   hasWheelWrench: boolean;
@@ -17,7 +17,7 @@ export function VehicleResume({
   plate,
   model,
   year,
-  secretary,
+  sector,
   hasStep,
   hasJack,
   hasWheelWrench,
@@ -54,8 +54,8 @@ export function VehicleResume({
             <span className="font-bold">{year}</span>
           </div>
           <div className="flex flex-row justify-between">
-            <label className="text-gray-500">Secretaria</label>
-            <span className="font-bold">{secretary}</span>
+            <label className="text-gray-500">Setor</label>
+            <span className="font-bold">{sector}</span>
           </div>
         </div>
       </div>

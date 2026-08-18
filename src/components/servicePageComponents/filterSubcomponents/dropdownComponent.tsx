@@ -1,8 +1,15 @@
 "use client" ;
-import { Search, ChevronDown, Filter, X } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
-export function FilterDropdown({ label, value, options, onChange }) {
+interface FilterDropdownProps {
+  label: string;
+  value: string;
+  options: string[];
+  onChange: (option: string) => void;
+}
+
+export function FilterDropdown({ label, value, options, onChange }: FilterDropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -20,7 +27,7 @@ export function FilterDropdown({ label, value, options, onChange }) {
 
         {isOpen && (
           <div className="absolute z-20 w-full mt-2 bg-white border border-zinc-200 rounded-xl shadow-lg overflow-hidden animate-in fade-in zoom-in duration-200">
-            {options.map((option) => (
+            {options.map((option: string) => (
               <button
                 key={option}
                 onClick={() => {

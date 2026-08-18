@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 64" width="200" height="64" role="img" aria-label="GFO - Gestao de Frota e Oficinas">
+  <rect x="8" y="14" width="36" height="36" rx="9" fill="#f97316"/>
+  <path d="M17 38.5h18M20.5 32.5h11" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="21.5" cy="43.5" r="2.6" fill="#ffffff"/>
+  <circle cx="33.5" cy="43.5" r="2.6" fill="#ffffff"/>
+  <text x="54" y="34" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#ffffff" letter-spacing="1.5">GFO</text>
+  <text x="54" y="47" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="8.5" font-weight="400" fill="#a1a1aa" letter-spacing="0.6">GESTÃO DE FROTA E OFICINAS</text>
+</svg>

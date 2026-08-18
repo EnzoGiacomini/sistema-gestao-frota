@@ -18,7 +18,7 @@ export default function LoginPage() {
     <div className="min-h-screen grid grid-cols-1 min-[950px]:grid-cols-2 bg-white text-black">
       <div className="flex flex-col justify-center items-center gap-12">
         <div className="flex flex-col items-center justify-center gap-10">
-          <img src="/logoPrefPelWhite.jpeg" alt="icon" className="w-130 h-50" />
+          <img src="/logo-mark.svg" alt="Logo GFO" className="w-130 h-50" />
           <p className="font-bold text-black-400 text-[22px]">
             Entre com a sua conta
           </p>
@@ -69,9 +69,9 @@ export default function LoginPage() {
       </div>
       <div className="hidden min-[950px]:flex flex-col justify-center items-center bg-zinc-900 bg-[url('/bg-login.webp')] bg-cover bg-center">
         <div className="flex bg-black/60 flex-col justify-center items-center rounded-3xl p-5 gap-6 text-center">
-          <h4 className="text-7xl font-bold text-white">DVO</h4>
+          <h4 className="text-7xl font-bold text-white">GFO</h4>
           <h5 className="text-3xl font-light text-gray-300">
-            Departamento de Veículos e Oficinas
+            Gestão de Frota e Oficinas
           </h5>
         </div>
       </div>
